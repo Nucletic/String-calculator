@@ -1,5 +1,16 @@
-// Language Agnostic Code
+const calculateSum = () => {
+  const result = document.getElementById('result');
+  const input = document.getElementById('numberInput').value;
+  try {
+    const sum = add(input);
+    result.innerText = sum;
+  } catch (error) {
+    result.innerText = error;
+  }
+}
 
+
+// Language Agnostic Code
 function add(numbers) {
   try {
     if (numbers === "") return 0;
@@ -26,22 +37,6 @@ function add(numbers) {
 }
 
 add();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
